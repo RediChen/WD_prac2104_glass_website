@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(5deg, #f5dca2 0%, #faffb6 50%, #f5dca2 100%);
+}
+
+#main-page {
+  width: clamp(300px, 60%, 750px);
+}
+/*# sourceMappingURL=style.css.map */
