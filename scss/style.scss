@@ -83,12 +83,14 @@ a {
             text-align: center;
         }
 
+        //* 側邊選單 - I : 大頭照與名稱
         div:first-child {
             h3,
             h4 {
                 text-align: center;
             }
         }
+        //* 側邊選單 - II : 分頁鈕
         #tabs {
             height: 15rem;
             display: inherit;
@@ -110,6 +112,7 @@ a {
                 }
             }
         }
+        //* 側邊選單 - III : 社群連結
         div:last-child {
             display: inherit;
             flex-direction: row;
