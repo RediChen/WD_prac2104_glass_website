@@ -99,10 +99,14 @@ a {
                 flex-grow: 1;
                 justify-content: center;
                 align-items: center;
+                transition: background-color 0.3s;
                 // background-color:#c9efd3;
                 //TODO for JS 用的顏色
                 img {
                     margin-right: 0.5rem;
+                }
+                &:hover {
+                    background-color: #fff;
                 }
             }
         }
@@ -111,15 +115,23 @@ a {
             flex-direction: row;
             justify-content: space-evenly;
             a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                width: 53px;
+                height: 52px;
+                transition: background-color 0.8s;
                 img {
-                    display: inline-block;
+                    width: 48px;
+                    height: 47px;
+                    object-fit: cover;
                     filter: drop-shadow(1px 1px 1px #00000033);
-                    transition: 0.5s;
                 }
                 &:hover {
+                    background-color: hsl(80, 45%, 27%);
                     img {
-                        transform: translate(1px, 1px);
-                        filter: drop-shadow(0 0 1px #ffffff99);
+                        filter: none;
                     }
                 }
             }
@@ -133,9 +145,14 @@ a {
         .inner-pages {
             height: 100%;
             width: 100%;
-            &:nth-child(n + 2) {
+            //TODO
+            &:not(:nth-child(1)) {
                 display: none;
             }
+            //TODO
+            // &:nth-child(n + 2) {
+            //     display: none;
+            // }
         }
     }
 }

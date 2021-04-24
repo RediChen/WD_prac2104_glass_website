@@ -115,10 +115,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 #main-page aside #tabs > h2 img {
   margin-right: 0.5rem;
+}
+
+#main-page aside #tabs > h2:hover {
+  background-color: #fff;
 }
 
 #main-page aside div:last-child {
@@ -132,19 +138,39 @@ a {
           justify-content: space-evenly;
 }
 
+#main-page aside div:last-child a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  width: 53px;
+  height: 52px;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+}
+
 #main-page aside div:last-child a img {
-  display: inline-block;
+  width: 48px;
+  height: 47px;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-filter: drop-shadow(1px 1px 1px #00000033);
           filter: drop-shadow(1px 1px 1px #00000033);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+}
+
+#main-page aside div:last-child a:hover {
+  background-color: #4f6426;
 }
 
 #main-page aside div:last-child a:hover img {
-  -webkit-transform: translate(1px, 1px);
-          transform: translate(1px, 1px);
-  -webkit-filter: drop-shadow(0 0 1px #ffffff99);
-          filter: drop-shadow(0 0 1px #ffffff99);
+  -webkit-filter: none;
+          filter: none;
 }
 
 #main-page #showcase {
@@ -156,7 +182,7 @@ a {
   width: 100%;
 }
 
-#main-page #showcase .inner-pages:nth-child(n + 2) {
+#main-page #showcase .inner-pages:not(:nth-child(1)) {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
