@@ -10,13 +10,13 @@ body {
     overflow: hidden;
 }
 body {
-    $a: 0.9 ;
-    background: linear-gradient(195deg, hsla(80, 57%, 77%, $a) 0%, hsla(166, 62%, 71%, $a) 100%) ;
+    $a: 0.9;
+    background: linear-gradient(195deg, hsla(80, 57%, 77%, $a) 0%, hsla(166, 62%, 71%, $a) 100%);
     // background: linear-gradient(0deg, rgba(56, 241, 244, 0.7) 0%, rgba(103, 255, 191, 0.7) 100%);
 }
 a {
     text-decoration: none;
-    color: black ;
+    color: black;
 }
 .round {
     border-radius: 50%;
@@ -78,6 +78,10 @@ a {
         justify-content: space-around;
         align-items: center;
         border-radius: inherit;
+        & > div {
+            width: 100%;
+            text-align: center;
+        }
 
         div:first-child {
             h3,
@@ -90,9 +94,31 @@ a {
             display: inherit;
             flex-direction: inherit;
             justify-content: space-between;
+            & > h2 {
+                display: flex;
+                flex-grow: 1;
+                border: 1px solid lightgreen;
+                justify-content: center;
+                align-items: center;
+            }
         }
         div:last-child {
-            border: 1px solid gold;
+            display: inherit;
+            flex-direction: row;
+            justify-content: space-evenly;
+            a {
+                img {
+                    display: inline-block;
+                    filter: drop-shadow(1px 1px 1px #00000033);
+                    transition: 0.5s;
+                }
+                &:hover {
+                    img {
+                        transform: translate(1px, 1px);
+                        filter: drop-shadow(0 0 1px #ffffff99);
+                    }
+                }
+            }
         }
     }
     // 側邊選單 END

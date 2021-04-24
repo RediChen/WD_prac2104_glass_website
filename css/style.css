@@ -80,6 +80,11 @@ a {
   border-radius: inherit;
 }
 
+#main-page aside > div {
+  width: 100%;
+  text-align: center;
+}
+
 #main-page aside div:first-child h3,
 #main-page aside div:first-child h4 {
   text-align: center;
@@ -97,8 +102,46 @@ a {
           justify-content: space-between;
 }
 
+#main-page aside div:nth-child(2) > h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid lightgreen;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #main-page aside div:last-child {
-  border: 1px solid gold;
+  display: inherit;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main-page aside div:last-child a img {
+  display: inline-block;
+  -webkit-filter: drop-shadow(1px 1px 1px #00000033);
+          filter: drop-shadow(1px 1px 1px #00000033);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main-page aside div:last-child a:hover img {
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+  -webkit-filter: drop-shadow(0 0 1px #ffffff99);
+          filter: drop-shadow(0 0 1px #ffffff99);
 }
 
 #main-page #showcase {
