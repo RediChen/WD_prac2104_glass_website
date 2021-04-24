@@ -5,15 +5,16 @@
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
 body {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(56, 241, 244, 0.8)), to(rgba(103, 255, 191, 0.8)));
-  background: linear-gradient(0deg, rgba(56, 241, 244, 0.8) 0%, rgba(103, 255, 191, 0.8) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(56, 241, 244, 0.7)), to(rgba(103, 255, 191, 0.7)));
+  background: linear-gradient(0deg, rgba(56, 241, 244, 0.7) 0%, rgba(103, 255, 191, 0.7) 100%);
 }
 
 .round {
@@ -22,19 +23,19 @@ body {
 
 #bg .circles {
   position: absolute;
-  background: radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 55%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.95) 100%);
+  background: radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 55%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.95) 80%, rgba(255, 255, 255, 0.95) 100%);
 }
 
 #bg .circles:first-child {
-  width: 300px;
-  height: 300px;
-  top: 7%;
-  right: 15%;
+  width: 20rem;
+  height: 20rem;
+  top: 3%;
+  right: 10%;
 }
 
 #bg .circles:last-child {
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   bottom: 8%;
   left: 20%;
 }
@@ -42,16 +43,24 @@ body {
 #main-page {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% auto;
-      grid-template-columns: 30% auto;
+  -ms-grid-columns: 12rem auto;
+      grid-template-columns: 12rem auto;
   margin: 50px auto 0;
-  width: clamp(300px, 60%, 750px);
+  width: clamp(300px, 80%, 750px);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 1.5rem;
+}
+
+#main-page aside,
+#main-page > div {
+  height: 80vh;
 }
 
 #main-page aside {
-  height: 80vh;
+  width: 12rem;
   background: linear-gradient(150deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 40%, rgba(255, 255, 255, 0.5) 90%, rgba(255, 255, 255, 0.3) 100%);
-  border-radius: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,15 +73,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: inherit;
 }
 
-#main-page aside:first-child h3, #main-page aside:first-child h4 {
+#main-page aside:first-child h3,
+#main-page aside:first-child h4 {
   text-align: center;
 }
 
 #main-page #showcase {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 2rem;
-  padding-right: 100px;
+  position: relative;
+}
+
+#main-page #showcase .inner-pages {
+  height: 100%;
+  width: 100%;
+}
+
+#main-page #showcase .inner-pages:nth-child(n + 2) {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
