@@ -11,8 +11,8 @@ body {
 }
 body {
     $a: 0.9 ;
-    // background: linear-gradient(195deg, hsla(80, 57%, 77%, $a) 0%, hsla(166, 62%, 71%, $a) 100%) ;
-    background: linear-gradient(0deg, rgba(56, 241, 244, 0.7) 0%, rgba(103, 255, 191, 0.7) 100%);
+    background: linear-gradient(195deg, hsla(80, 57%, 77%, $a) 0%, hsla(166, 62%, 71%, $a) 100%) ;
+    // background: linear-gradient(0deg, rgba(56, 241, 244, 0.7) 0%, rgba(103, 255, 191, 0.7) 100%);
 }
 a {
     text-decoration: none;
