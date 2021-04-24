@@ -89,7 +89,7 @@ a {
                 text-align: center;
             }
         }
-        div:nth-child(2) {
+        #tabs {
             height: 15rem;
             display: inherit;
             flex-direction: inherit;
@@ -97,9 +97,13 @@ a {
             & > h2 {
                 display: flex;
                 flex-grow: 1;
-                border: 1px solid lightgreen;
                 justify-content: center;
                 align-items: center;
+                // background-color:#c9efd3;
+                //TODO for JS 用的顏色
+                img {
+                    margin-right: 0.5rem;
+                }
             }
         }
         div:last-child {

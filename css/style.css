@@ -90,7 +90,7 @@ a {
   text-align: center;
 }
 
-#main-page aside div:nth-child(2) {
+#main-page aside #tabs {
   height: 15rem;
   display: inherit;
   -webkit-box-orient: inherit;
@@ -102,20 +102,23 @@ a {
           justify-content: space-between;
 }
 
-#main-page aside div:nth-child(2) > h2 {
+#main-page aside #tabs > h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 1px solid lightgreen;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#main-page aside #tabs > h2 img {
+  margin-right: 0.5rem;
 }
 
 #main-page aside div:last-child {
