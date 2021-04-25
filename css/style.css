@@ -156,6 +156,7 @@ a {
 }
 
 #main-page aside div:last-child a img {
+  display: block;
   width: 48px;
   height: 47px;
   -o-object-fit: cover;
@@ -164,13 +165,11 @@ a {
           filter: drop-shadow(1px 1px 1px #00000033);
 }
 
-#main-page aside div:last-child a:hover {
-  background-color: #4f6426;
-}
-
 #main-page aside div:last-child a:hover img {
-  -webkit-filter: none;
-          filter: none;
+  -webkit-filter: invert(5%);
+          filter: invert(5%);
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
 }
 
 #main-page #showcase {
