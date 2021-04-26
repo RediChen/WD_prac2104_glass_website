@@ -21,6 +21,18 @@ a {
 .round {
     border-radius: 50%;
 }
+.hr-2 {
+    & > div {
+        width: 1rem;
+        height: 10px;
+        background-color: hsl(80, 45%, 27%);
+        border-radius: 2px;
+    }
+    //mt & mb 待設定
+    margin-left: 2rem;
+    margin-right: 20%;
+    border-bottom: 1px solid hsl(80, 45%, 27%);
+}
 // 通用設定 END
 //* 背景圖形
 #bg {
@@ -52,20 +64,23 @@ a {
 }
 //  背景圖形 END
 #main-page {
+    $gap: 0.5rem ;
+    // main-page = { showcase, aside}
     display: grid;
     grid-template-columns: 12rem auto;
+    gap: $gap;
     margin: 50px auto 0;
     width: clamp(300px, 80%, 750px);
     backdrop-filter: blur(1rem);
     background-color: rgba(#fff, 0.3);
     border-radius: 1.5rem;
-    aside,
-    & > div {
+    & > * {
         height: 80vh;
     }
     //* 側邊選單
     aside {
         width: 12rem;
+        grid-area: 1 / 1;
         background: linear-gradient(
             150deg,
             rgba(#fff, 0.8) 0%,
@@ -133,7 +148,6 @@ a {
                     filter: drop-shadow(1px 1px 1px #00000033);
                 }
                 &:hover {
-                    // background-color: hsl(80, 45%, 27%);
                     img {
                         filter: invert(5%);
                         transform: translate(2px, 2px);
@@ -146,15 +160,17 @@ a {
     //* 內容頁面
     #showcase {
         position: relative;
+        grid-area: 1 / 2;
+        margin: $gap 0;
 
         .inner-pages {
             height: 100%;
             width: 100%;
-            //TODO
+            //TODO 後台用傳送門
             &:not(:nth-child(1)) {
                 display: none;
             }
-            //TODO
+            //TODO 後台用傳送門 END
             // &:nth-child(n + 2) {
             //     display: none;
             // }

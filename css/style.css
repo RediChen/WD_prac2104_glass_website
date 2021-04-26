@@ -25,6 +25,19 @@ a {
   border-radius: 50%;
 }
 
+.hr-2 {
+  margin-left: 2rem;
+  margin-right: 20%;
+  border-bottom: 1px solid #4f6426;
+}
+
+.hr-2 > div {
+  width: 1rem;
+  height: 10px;
+  background-color: #4f6426;
+  border-radius: 2px;
+}
+
 #bg .circles {
   position: absolute;
   background: radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 55%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.95) 80%, rgba(255, 255, 255, 0.95) 100%);
@@ -49,6 +62,7 @@ a {
   display: grid;
   -ms-grid-columns: 12rem auto;
       grid-template-columns: 12rem auto;
+  gap: 0.5rem;
   margin: 50px auto 0;
   width: clamp(300px, 80%, 750px);
   -webkit-backdrop-filter: blur(1rem);
@@ -57,13 +71,15 @@ a {
   border-radius: 1.5rem;
 }
 
-#main-page aside,
-#main-page > div {
+#main-page > * {
   height: 80vh;
 }
 
 #main-page aside {
   width: 12rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1;
   background: linear-gradient(150deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0.3) 90%, rgba(255, 255, 255, 0.2) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,6 +190,10 @@ a {
 
 #main-page #showcase {
   position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1 / 2;
+  margin: 0.5rem 0;
 }
 
 #main-page #showcase .inner-pages {
