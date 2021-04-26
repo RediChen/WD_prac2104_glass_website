@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -33,9 +34,9 @@ a {
 
 .hr-2 > div {
   width: 1rem;
-  height: 10px;
+  height: 5px;
   background-color: #4f6426;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 #bg .circles {
@@ -62,7 +63,7 @@ a {
   display: grid;
   -ms-grid-columns: 12rem auto;
       grid-template-columns: 12rem auto;
-  gap: 0.5rem;
+  gap: 3rem;
   margin: 50px auto 0;
   width: clamp(300px, 80%, 750px);
   -webkit-backdrop-filter: blur(1rem);
@@ -71,7 +72,7 @@ a {
   border-radius: 1.5rem;
 }
 
-#main-page > * {
+#main-page, #main-page > * {
   height: 80vh;
 }
 
@@ -193,7 +194,7 @@ a {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1 / 2;
-  margin: 0.5rem 0;
+  margin: 3rem 0;
 }
 
 #main-page #showcase .inner-pages {
