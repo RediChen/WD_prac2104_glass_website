@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" inner-pages="IE=edge">
-    <meta name="viewport" inner-pages="width=device-width, initial-scale=1.0">
+    <meta name="viewport" inner-pages="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="./css/style.css">
     <title>陳致 | Redii</title>
 </head>
 
 <body>
-    <div id="bg">
+    <div id="bg-deco">
         <div class="circles round"></div>
         <div class="circles round"></div>
     </div>
-    <div class="map">
-        <div class="sub-map" id="main-page">
+    <div id="map">
+        <div id="main-page" class="mg-fix">
             <div id="panel">
-                <!-- showcase + aside -->
+                <!-- aside + showcase -->
+                <!-- 以下順序是位確保aside在上方 -->
                 <div id="showcase">
                     <!-- 個人簡介 -->
                     <div class="inner-pages">
@@ -37,11 +38,10 @@
                     <div class="inner-pages">
                     </div>
                 </div>
-                <!-- 此順序是位確保aside在上方 -->
                 <aside>
                     <div>
                         <img src="https://fakeimg.pl/128x128/666,128/fff,255/?text=photo" alt="照騙" class="round">
-                        <h3>名字</h3>
+                        <h3>陳致</h3>
                         <h4>Redii</h4>
                     </div>
                     <div id="tabs">
@@ -70,31 +70,37 @@
                 </aside>
             </div>
         </div>
-        <div class="sub-map" id="sec-page">
-            <div id="web">
+        <div id="sec-page" class="mg-fix">
+            <div id="web" class="mg-fix">
                 <div class="display-rail"></div>
-                <div>
-                    <h2>心晴身心診所</h2>
-                    <p>網站重製</p>
-                    <a href="https://rediichen.github.io/WD_Proj2021_SSClinic_redesign/" target="_blank">
-                        <img src="./piece/websiteLink.png" alt="前往重製的網站">
-                    </a>
+                <header>
+                    <h1>網站作品</h1>
+                </header>
+                <!-- todo 要在畫面切換完，才出現在畫面中 for abs pos -->
+                <div class="work-wrap">
+                    <div class="works">
+                        <h2>心晴身心診所</h2>
+                        <p>網站重製</p>
+                        <a href="https://rediichen.github.io/WD_Proj2021_SSClinic_redesign/" target="_blank">
+                            <img src="./piece/websiteLink.png" alt="前往重製的網站">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div id="graphic">
+            <div id="graphic" class="mg-fix">
                 <div class="display-rail"></div>
-                <div class="works">
-                    <div>
+                <div class="work-wrap">
+                    <div class="works">
                         <h2>遙望海景</h2>
                         <p>軟體使用：Adobe Illustrator</p>
                         <img src="./piece/SeaView_lowPoly.png" alt="一坪海岸線">
                     </div>
-                    <div>
+                    <div class="works">
                         <h2>二頭身林克</h2>
                         <p>軟體使用：Corel Painter</p>
                         <img src="./piece/Link_superDeformed.jpg" alt="我不是薩爾達">
                     </div>
-                    <div>
+                    <div class="works">
                         <h2>祖母綠之星</h2>
                         <p>軟體使用：Corel Painter</p>
                         <img src="./piece/Emerald.jpg" alt="祖母綠之星">

@@ -39,26 +39,47 @@ a {
   border-radius: 1px;
 }
 
-#bg .circles {
+.mg-fix::before {
+  clear: both;
+  content: "";
+  display: table;
+  margin-top: -1px;
+  height: 0;
+}
+
+#bg-deco .circles {
   position: absolute;
   background: radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 55%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.95) 80%, rgba(255, 255, 255, 0.95) 100%);
 }
 
-#bg .circles:first-child {
+#bg-deco .circles:first-child {
   width: 20rem;
   height: 20rem;
   top: 3%;
   right: 10%;
 }
 
-#bg .circles:last-child {
+#bg-deco .circles:last-child {
   width: 8rem;
   height: 8rem;
   bottom: 8%;
   left: 20%;
 }
 
-#main-page #panel {
+#map,
+#map > div,
+#map #sec-page > div {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 15px 5px gold inset;
+          box-shadow: 0 0 15px 5px gold inset;
+}
+
+#main-page {
+  display: none;
+}
+
+#panel {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 12rem auto;
@@ -72,11 +93,12 @@ a {
   border-radius: 1.5rem;
 }
 
-#main-page #panel, #main-page #panel > * {
+#panel,
+#panel > * {
   height: 80vh;
 }
 
-#main-page #panel aside {
+#panel aside {
   width: 12rem;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -97,17 +119,17 @@ a {
   border-radius: inherit;
 }
 
-#main-page #panel aside > div {
+#panel aside > div {
   width: 100%;
   text-align: center;
 }
 
-#main-page #panel aside div:first-child h3,
-#main-page #panel aside div:first-child h4 {
+#panel aside div:first-child h3,
+#panel aside div:first-child h4 {
   text-align: center;
 }
 
-#main-page #panel aside #tabs {
+#panel aside #tabs {
   height: 15rem;
   display: inherit;
   -webkit-box-orient: inherit;
@@ -119,7 +141,7 @@ a {
           justify-content: space-between;
 }
 
-#main-page #panel aside #tabs > h2 {
+#panel aside #tabs > h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,15 +158,15 @@ a {
   transition: background-color 0.3s;
 }
 
-#main-page #panel aside #tabs > h2 img {
+#panel aside #tabs > h2 img {
   margin-right: 0.5rem;
 }
 
-#main-page #panel aside #tabs > h2:hover {
+#panel aside #tabs > h2:hover {
   background-color: #fff;
 }
 
-#main-page #panel aside div:last-child {
+#panel aside div:last-child {
   display: inherit;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -155,7 +177,7 @@ a {
           justify-content: space-evenly;
 }
 
-#main-page #panel aside div:last-child a {
+#panel aside div:last-child a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +194,7 @@ a {
   transition: 0.8s;
 }
 
-#main-page #panel aside div:last-child a img {
+#panel aside div:last-child a img {
   display: block;
   width: 48px;
   height: 47px;
@@ -182,14 +204,14 @@ a {
           filter: drop-shadow(2px 2px 1px #00000033);
 }
 
-#main-page #panel aside div:last-child a:hover img {
+#panel aside div:last-child a:hover img {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
   -webkit-transform: translate(2px, 2px);
           transform: translate(2px, 2px);
 }
 
-#main-page #panel #showcase {
+#panel #showcase {
   position: relative;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -197,12 +219,26 @@ a {
   margin: 3rem 0;
 }
 
-#main-page #panel #showcase .inner-pages {
+#panel #showcase .inner-pages {
   height: 100%;
   width: 100%;
 }
 
-#main-page #panel #showcase .inner-pages:not(:nth-child(1)) {
+#panel #showcase .inner-pages:not(:nth-child(1)) {
   display: none;
+}
+
+#sec-page {
+  position: relative;
+}
+
+#sec-page .display-rail {
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  background-color: lightgoldenrodyellow;
+  border-radius: 2rem 0 0 2rem;
 }
 /*# sourceMappingURL=style.css.map */
