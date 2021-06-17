@@ -168,8 +168,8 @@ a {
   border-radius: 15px;
   width: 53px;
   height: 52px;
-  -webkit-transition: background-color 0.8s;
-  transition: background-color 0.8s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 #main-page aside div:last-child a img {
@@ -178,13 +178,13 @@ a {
   height: 47px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: drop-shadow(1px 1px 1px #00000033);
-          filter: drop-shadow(1px 1px 1px #00000033);
+  -webkit-filter: drop-shadow(2px 2px 1px #00000033);
+          filter: drop-shadow(2px 2px 1px #00000033);
 }
 
 #main-page aside div:last-child a:hover img {
-  -webkit-filter: invert(5%);
-          filter: invert(5%);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
   -webkit-transform: translate(2px, 2px);
           transform: translate(2px, 2px);
 }
